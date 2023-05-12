@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  
+}
+
+body{
+   background-color: #E9ECF8;  
+}
+
+/* contenedor principal */
+.container{
+    width: 100%;
+ 
+}
+
+.logo{
+    padding-left: 20px;
+    color: #0A3871;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+
+.elements-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.input-text__container{
+display: flex;
+justify-content: center;
+margin-bottom: 10px;
+height: 400px;
+}
+
+.input__area{
+    width: 100%;
+    resize: none;
+    font-size: 24px;
+    color: #0A3871;
+    border: none;
+    background-color: #E9ECF8;
+    outline: none;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.roundedbtn{
+    margin-bottom: 15px;
+    border-radius: 18px;
+    height: 47px;
+    cursor: pointer;
+    background-color:  #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    
+}
+
+.darkbtn{
+background-color: #0A3871;
+color: #fff;
+}
+
+
+.output-container{
+    margin-top: 20px;
+    
+}
+
+.card{
+    border-radius: 18px;
+    background-color: #fff; 
+ 
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.output-default__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 8px;
+    height: 120px;
+    
+}
+
+.output-msg__title{
+    margin-bottom: 12px;
+}
+
+.btnscontainer__msg{
+    font-size: 22px;
+}
+
+.output-text__container{
+display:flex ;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+min-height: 120px;
+padding: 20px;
+}
+
+.output__text{
+    font-size: 22px;
+    text-align:left;
+    margin-bottom: 24px;
+}
+
+.copybtn{
+    width: 60%;
+}
+
+/* tablet responsive*/
+@media only screen and (min-width: 600px) {
+
+    .container{
+        
+       
+    }
+
+    .elements-container{
+        padding: 20px;
+    }
+
+    .input-text__container{
+       height: 680px;
+    }
+
+    .buttons-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .roundedbtn{
+        width: 49%;
+        height: 60px;
+        font-size: 24px;
+       
+    }
+
+    .output-default__container{
+        height: 120px;
+        
+
+    }
+
+   .output-msg__title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #343A40;
+    margin-bottom: 10px;
+   }
+
+   .output-msg__text{
+    font-size: 20px;
+    color: #495057;
+   }
+
+  }
+
+  @media only screen and (min-width: 768px) {
+    .container{
+        
+       
+    }
+
+   
+
+    .elements-container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .input-container{
+    width: 65%;
+    }
+
+    .input-text__container{
+        height: 500px;
+     }
+
+    .output-container{
+        width: 30%;
+        margin-top: 0;
+    }
+
+    .output-default__container{
+        height: 600px;
+        
+
+    }
+
+    .output-text__container{
+        height: 600px;
+        overflow-y: scroll;
+        justify-content: space-between;
+    }
+
+    .roundedbtn{
+        margin-bottom: 0px;
+    }
+
+    .copybtn{
+        padding: 7px;
+    }
+
+  }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body{
+      
+    }
+
+    .elements-container{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+   .input-container{
+    width: 100%;
+    margin-bottom: 25px;
+    
+   }
+
+   .input-text__container{
+    height: 800px;
+   }
+
+   .output-container{
+    width: 100%;
+   
+   }
+
+   
+   .card{
+    height: 140px;
+    height: 330px;
+   }
+    
+   
+
+   }

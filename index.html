@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="logo">
+        <span >a</span>
+    </div>
+
+    <div class="container">
+        
+        <div class="elements-container">
+            
+            <div class="input-container">
+
+                <div class="input-text__container">
+                    <!--- caja de texto de entrada-->
+                    <textarea  id="txtAreaEntrada" cols="30" rows="10" placeholder="Ingrese el texto aqui"
+                        class="input__area" ></textarea>
+                    
+                </div>
+
+                <div class="input-bottom">
+                    <span class="btnscontainer__msg"> &#x24d8 solo letras minusculas y sin acentos</span>
+                    <div class="buttons-container">
+                        <button class="roundedbtn darkbtn" onclick="Encrypt()">Encriptar</button>
+                        <button class="roundedbtn" onclick="Decrypt()">Desencriptar</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="output-container">
+                <div class="card output-default__container" id="cardMsg">
+                    <h3 class="output-msg__title">Ningun mensaje fue encontrado</h3>
+                    <p class="output-msg__text">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+
+                <div class="card output-text__container" style="display: none;" id="card__salida">
+                    <p class="output__text" id="outputText">
+
+                    </p>
+                    <button class="roundedbtn copybtn" onclick="copyToInputBox()" id="copyBtn">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
